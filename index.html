@@ -464,8 +464,11 @@
       background: linear-gradient(145deg, rgba(36, 88, 184, 0.2), rgba(0, 0, 0, 0.4));
       border: 1px solid rgba(253, 241, 72, 0.15);
       border-radius: 24px;
-      padding: 32px 24px;
+      padding: 64px 24px 32px;
       transition: all 0.3s;
+      display: flex;
+      flex-direction: column;
+      position: relative;
     }
 
     .service-card:hover {
@@ -485,6 +488,9 @@
       font-weight: 700;
       margin-bottom: 12px;
       color: var(--yellow);
+      min-height: 3.6rem;
+      display: flex;
+      align-items: flex-start;
     }
 
     .service-card p {
@@ -492,6 +498,7 @@
       color: #bbb;
       margin-bottom: 18px;
       line-height: 1.6;
+      flex-grow: 1;
     }
 
     .service-tag {
@@ -505,7 +512,7 @@
     }
 
     .service-cta {
-      margin-top: 18px;
+      margin-top: 28px;
       display: inline-block;
       font-size: 0.8rem;
       color: var(--yellow);
@@ -514,6 +521,9 @@
     }
 
     .premium-badge {
+      position: absolute;
+      top: 20px;
+      left: 24px;
       background: linear-gradient(135deg, var(--yellow), var(--pink));
       color: var(--dark);
       font-weight: 800;
@@ -521,7 +531,7 @@
       border-radius: 40px;
       font-size: 0.7rem;
       display: inline-block;
-      margin-bottom: 12px;
+      z-index: 1;
     }
 
     /* Proceso */
@@ -796,7 +806,8 @@
         gap: 32px;
       }
 
-      .hero-content, .hero-image {
+      .hero-content,
+      .hero-image {
         flex: 1 1 100%;
       }
 
@@ -843,7 +854,13 @@
         gap: 32px;
       }
 
-      .pain-section, .services-section, .process-section, .proof-section, .diff-section, .faq-section, .final-cta {
+      .pain-section,
+      .services-section,
+      .process-section,
+      .proof-section,
+      .diff-section,
+      .faq-section,
+      .final-cta {
         padding: 60px 20px;
       }
 
@@ -867,7 +884,10 @@
         font-size: 1.8rem;
       }
 
-      .pain-grid, .testimonials-grid, .services-grid, .diff-grid {
+      .pain-grid,
+      .testimonials-grid,
+      .services-grid,
+      .diff-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -1135,7 +1155,7 @@
               </path>
               <path
                 d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
-            </svg> Cotizar este servicio →</a>
+            </svg> ← Cotiza aquí</a>
         </div>
         <div class="service-card">
           <div class="service-icon">💻</div>
@@ -1151,7 +1171,7 @@
               </path>
               <path
                 d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
-            </svg> Cotizar →</a>
+            </svg> ← Cotiza aquí</a>
         </div>
         <div class="service-card">
           <div class="service-icon">💻</div>
@@ -1167,7 +1187,7 @@
               </path>
               <path
                 d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
-            </svg> Cotizar →</a>
+            </svg> ← Cotiza aquí</a>
         </div>
         <div class="service-card">
           <div class="service-icon">🖥️</div>
@@ -1183,7 +1203,7 @@
               </path>
               <path
                 d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
-            </svg> Cotizar →</a>
+            </svg> ← Cotiza aquí</a>
         </div>
         <div class="service-card">
           <div class="service-icon">📱</div>
@@ -1199,7 +1219,7 @@
               </path>
               <path
                 d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
-            </svg> Cotizar →</a>
+            </svg> ← Cotiza aquí</a>
         </div>
       </div>
     </div>
