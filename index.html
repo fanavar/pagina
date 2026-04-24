@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Soultech Chile | Servicio Técnico en San Pedro de la Paz | Notebooks, Celulares, Tablets</title>
+  <meta name="description"
+    content="Recupera tu equipo en 24 horas. Servicio técnico profesional en San Pedro de la Paz. Notebooks, celulares y tablets. Diagnóstico certero, trabajo responsable.">
+  <meta name="keywords"
+    content="servicio técnico notebook, reparación celular, tablet, formateo pc, upgrade SSD, San Pedro de la Paz, Concepción">
+  <meta name="author" content="Soultech Chile">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="CL-BI">
+  <meta name="geo.placename" content="San Pedro de la Paz">
+  <meta property="og:title" content="Soultech Chile | Tu equipo como nuevo">
+  <meta property="og:description"
+    content="Reparación y optimización de notebooks, celulares y tablets en San Pedro de la Paz. Respuesta rápida, trabajo responsable.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --yellow: #F2EB5B;
+      --pink: #EC3580;
+      --navy: #231F8D;
+      --dark: #0A0C12;
+      --white: #FFFFFF;
+      --gray: #F4F4F6;
+      --text-muted: #A0A0B0;
+      --green-wa: #25D366;
+      --radius: 16px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      overflow-x: hidden;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .highlight {
+      color: var(--yellow);
+    }
+
+    .highlight-pink {
+      color: var(--pink);
+    }
+
+    /* Logo */
+    .logo-text {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, var(--white) 0%, var(--yellow) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .logo-text span {
+      color: var(--yellow);
+      background: none;
+    }
+
+    .logo-small {
+      font-size: 0.7rem;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-top: -4px;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(35, 31, 141, 0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(253, 241, 72, 0.2);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--green-wa);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 10px 22px;
+      border-radius: 60px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .header-cta:hover {
+      transform: scale(1.03);
+      background: #20b859;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 80px 24px 60px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 50% at 60% 40%, rgba(236, 53, 128, 0.15) 0%, transparent 60%);
+      z-index: 0;
+    }
+
+    .hero-split {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      position: relative;
+      z-index: 2;
+      flex-wrap: wrap;
+    }
+
+    .hero-content {
+      flex: 1 1 500px;
+      max-width: 650px;
+    }
+
+    .hero-image {
+      flex: 1 1 400px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 24px;
+      mix-blend-mode: lighten;
+      transition: transform 0.5s ease;
+    }
+
+    .hero-image img:hover {
+      transform: translateY(-10px) scale(1.02);
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      background: rgba(245, 230, 66, 0.12);
+      border: 1px solid rgba(245, 230, 66, 0.4);
+      color: var(--yellow);
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 60px;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: clamp(2.5rem, 7vw, 4.8rem);
+      font-weight: 800;
+      line-height: 1.08;
+      margin-bottom: 24px;
+    }
+
+    .hero .subtitle {
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.85);
+      max-width: 580px;
+      margin-bottom: 36px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--green-wa);
+      color: white;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 16px 32px;
+      border-radius: 60px;
+      text-decoration: none;
+      transition: 0.2s;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5);
+      background: #20b859;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      border: 1.5px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      font-weight: 600;
+      padding: 14px 26px;
+      border-radius: 60px;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--yellow);
+      background: rgba(245, 230, 66, 0.08);
+    }
+
+    .urgency-tag {
+      margin-top: 24px;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .urgency-tag span {
+      color: var(--pink);
+      font-weight: 700;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 56px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      border-left: 3px solid var(--yellow);
+      padding-left: 18px;
+    }
+
+    .stat-num {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--yellow);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.65);
+      margin-top: 6px;
+    }
+
+    /* Trust bar */
+    .trust-bar {
+      background: rgba(26, 20, 100, 0.4);
+      border-top: 1px solid rgba(245, 230, 66, 0.15);
+      border-bottom: 1px solid rgba(245, 230, 66, 0.15);
+      padding: 16px 24px;
+    }
+
+    .trust-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px 32px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #e0e0e0;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Secciones */
+    .section-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--pink);
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: clamp(1.9rem, 4.5vw, 3rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .section-sub {
+      color: rgba(255, 255, 255, 0.65);
+      font-size: 1.05rem;
+      max-width: 620px;
+      margin: 0 auto 56px;
+    }
+
+    /* Pain section */
+    .pain-section {
+      padding: 90px 24px;
+      background: rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto 52px;
+    }
+
+    .pain-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: 28px 20px;
+      text-align: left;
+      transition: all 0.25s;
+    }
+
+    .pain-card:hover {
+      border-color: rgba(232, 25, 122, 0.5);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .pain-emoji {
+      font-size: 2rem;
+      margin-bottom: 14px;
+    }
+
+    .pain-card p {
+      font-size: 0.95rem;
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    /* Testimonios */
+    .testimonials-section {
+      padding: 90px 24px;
+      background: transparent;
+      text-align: center;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .testimonial-card {
+      background: linear-gradient(145deg, rgba(36, 88, 184, 0.2), rgba(0, 0, 0, 0.4));
+      border: 1px solid rgba(253, 241, 72, 0.15);
+      border-radius: 24px;
+      padding: 28px;
+      text-align: left;
+      transition: 0.25s;
+    }
+
+    .testimonial-card:hover {
+      border-color: var(--yellow);
+      transform: translateY(-5px);
+    }
+
+    .testimonial-text {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ddd;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .author-avatar {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, var(--yellow), var(--pink));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: var(--dark);
+    }
+
+    .author-info strong {
+      display: block;
+      color: var(--yellow);
+    }
+
+    .author-info span {
+      font-size: 0.75rem;
+      color: #888;
+    }
+
+    /* Servicios - versión real */
+    .services-section {
+      padding: 90px 24px;
+      background: rgba(0, 0, 0, 0.15);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 28px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      background: linear-gradient(145deg, rgba(36, 88, 184, 0.2), rgba(0, 0, 0, 0.4));
+      border: 1px solid rgba(253, 241, 72, 0.15);
+      border-radius: 24px;
+      padding: 64px 24px 32px;
+      transition: all 0.3s;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--yellow);
+      box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    .service-icon {
+      font-size: 2.4rem;
+      margin-bottom: 18px;
+    }
+
+    .service-card h3 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--yellow);
+      min-height: 3.6rem;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .service-card p {
+      font-size: 0.92rem;
+      color: #bbb;
+      margin-bottom: 18px;
+      line-height: 1.6;
+      flex-grow: 1;
+    }
+
+    .service-tag {
+      background: rgba(236, 53, 128, 0.2);
+      color: var(--pink);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 40px;
+      display: inline-block;
+    }
+
+    .service-cta {
+      margin-top: 28px;
+      display: inline-block;
+      font-size: 0.8rem;
+      color: var(--yellow);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .premium-badge {
+      position: absolute;
+      top: 20px;
+      left: 24px;
+      background: linear-gradient(135deg, var(--yellow), var(--pink));
+      color: var(--dark);
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 40px;
+      font-size: 0.7rem;
+      display: inline-block;
+      z-index: 1;
+    }
+
+    /* Proceso */
+    .process-section {
+      padding: 90px 24px;
+      background: transparent;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .step {
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    .step-num {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, var(--yellow), var(--pink));
+      color: var(--dark);
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      box-shadow: 0 8px 20px rgba(245, 230, 66, 0.3);
+    }
+
+    .step h4 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Proof + Cobertura */
+    .proof-section {
+      padding: 90px 24px;
+      text-align: center;
+    }
+
+    .proof-number {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: clamp(4rem, 12vw, 7rem);
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--yellow), var(--pink));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    .zones {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin: 48px 0 40px;
+    }
+
+    .zone-tag {
+      background: rgba(36, 88, 184, 0.4);
+      border: 1px solid rgba(36, 88, 184, 0.6);
+      padding: 6px 20px;
+      border-radius: 60px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    /* Diferenciadores */
+    .diff-section {
+      padding: 90px 24px;
+      background: rgba(0, 0, 0, 0.15);
+    }
+
+    .diff-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 24px;
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+
+    .diff-card {
+      display: flex;
+      gap: 20px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 20px;
+      padding: 28px 24px;
+      transition: 0.2s;
+    }
+
+    .diff-card:hover {
+      border-color: rgba(245, 230, 66, 0.3);
+    }
+
+    .diff-icon-wrap {
+      width: 52px;
+      height: 52px;
+      background: rgba(245, 230, 66, 0.1);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+    }
+
+    .diff-card h4 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.2rem;
+      color: var(--yellow);
+      margin-bottom: 6px;
+    }
+
+    .diff-card p {
+      font-size: 0.88rem;
+      color: #aaa;
+    }
+
+    /* Final CTA */
+    .final-cta {
+      padding: 100px 24px;
+      text-align: center;
+      background: transparent;
+      position: relative;
+    }
+
+    .final-cta .btn-primary {
+      font-size: 1.2rem;
+      padding: 18px 40px;
+    }
+
+    .guarantee-note {
+      margin-top: 28px;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 48px 24px 32px;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .footer-logo {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--white), var(--yellow));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 24px;
+      display: inline-block;
+    }
+
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .social-btn {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 8px 20px;
+      border-radius: 60px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: #ccc;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: 0.2s;
+    }
+
+    .social-btn:hover {
+      background: var(--yellow);
+      color: #0D0D0D;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .footer-links a {
+      color: #7a7a8a;
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--yellow);
+    }
+
+    .footer-copy {
+      font-size: 0.75rem;
+      color: #4a4a5a;
+    }
+
+    /* WhatsApp Float */
+    .wa-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 64px;
+      height: 64px;
+      background: var(--green-wa);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+      z-index: 999;
+      transition: transform 0.2s;
+      text-decoration: none;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.08);
+    }
+
+    .wa-float svg {
+      width: 34px;
+      height: 34px;
+      fill: white;
+    }
+
+    /* Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(35px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .hero-split {
+        gap: 32px;
+      }
+
+      .hero-content,
+      .hero-image {
+        flex: 1 1 100%;
+      }
+
+      .hero-actions {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.2rem, 8vw, 3rem);
+      }
+
+      .hero-stats {
+        gap: 24px;
+        justify-content: center;
+      }
+
+      .diff-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .header-cta {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+        margin-top: 8px;
+      }
+
+      .btn-primary {
+        padding: 14px 24px;
+        font-size: 0.95rem;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .btn-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .steps {
+        gap: 32px;
+      }
+
+      .pain-section,
+      .services-section,
+      .process-section,
+      .proof-section,
+      .diff-section,
+      .faq-section,
+      .final-cta {
+        padding: 60px 20px;
+      }
+
+      .trust-inner {
+        gap: 12px 16px;
+      }
+
+      .top-bar {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+        line-height: 1.4;
+      }
+
+      .hero-badge {
+        font-size: 0.7rem;
+        padding: 6px 12px;
+        margin-bottom: 20px;
+      }
+
+      .stat-num {
+        font-size: 1.8rem;
+      }
+
+      .pain-grid,
+      .testimonials-grid,
+      .services-grid,
+      .diff-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Meta Ads Top Bar */
+    .top-bar {
+      background: var(--yellow);
+      color: var(--dark);
+      text-align: center;
+      padding: 0;
+      font-size: 0.9rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      z-index: 200;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      min-height: 40px;
+      overflow: hidden;
+    }
+    .topbar-slide {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.7s ease;
+      pointer-events: none;
+      padding: 10px 24px;
+      box-sizing: border-box;
+    }
+    .topbar-slide.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .top-bar span {
+      background: var(--pink);
+      color: var(--white);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      margin-right: 8px;
+      text-transform: uppercase;
+    }
+
+    /* Reviews */
+    .hero-reviews {
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #FFB800;
+    }
+
+    .hero-reviews span {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.85rem;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      padding: 90px 24px;
+      background: transparent;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 16px;
+    }
+
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 16px 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .faq-icon {
+      font-size: 1.5rem;
+      color: var(--yellow);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      color: #bbb;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .faq-answer-inner {
+      padding-bottom: 24px;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="top-bar">
+    <div class="topbar-slide active">⭐ "Mi PC volvió a la vida. Valió totalmente la pena." — <strong>Carlos Rojas</strong></div>
+    <div class="topbar-slide">⭐ "Muy transparente en el trabajo que realiza. 100% recomendable." — <strong>Roberto Fuentes</strong></div>
+    <div class="topbar-slide">⭐ "Gran profesional, honestidad y amabilidad en todo el proceso." — <strong>Marcela Vidal</strong></div>
+    <div class="topbar-slide">⭐ "Profesional, rápido y de calidad. El equipo quedó en perfectas condiciones." — <strong>Alejandro Pérez</strong></div>
+    <div class="topbar-slide">⭐ "Excelente trabajo, amabilidad y responsabilidad. El notebook quedó óptimo." — <strong>Verónica Salinas</strong></div>
+    <script>
+      (function(){
+        var slides = document.querySelectorAll('.topbar-slide');
+        var current = 0;
+        setInterval(function(){
+          slides[current].classList.remove('active');
+          current = (current + 1) % slides.length;
+          slides[current].classList.add('active');
+        }, 4000);
+      })();
+    </script>
+  </div>
+
+
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-split container">
+      <div class="hero-content">
+        <div class="hero-badge">⚡ Servicio técnico profesional — San Pedro de la Paz</div>
+        <div class="hero-reviews">⭐⭐⭐⭐⭐ <span><strong>4.9/5</strong> · +320 clientes satisfechos</span></div>
+        <h1>No lo botes.<br><span class="highlight">Nosotros lo recuperamos.</span></h1>
+        <p class="subtitle">Notebooks, celulares y tablets. Trabajo responsable y resultados que se notan. Ubicados en San Pedro de la Paz.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/56933034894?text=Hola!%20Vi%20su%20anuncio%20y%20quiero%20saber%20si%20mi%20equipo%20tiene%20solución"
+            class="btn-primary">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
+            </svg>
+            Consultar si tiene solución →
+          </a>
+          <a href="#precios" class="btn-secondary">Ver precios ↓</a>
+        </div>
+        <p class="urgency-tag" id="cupos-tag"></p>
+        <script>
+          (function(){
+            var day = new Date().getDay();
+            var msg = '';
+            if(day === 1) msg = '<span>⚠️ Solo 4 cupos disponibles</span> esta semana. Agenda el tuyo hoy.';
+            else if(day === 2) msg = '<span>⚠️ Solo 3 cupos disponibles</span> esta semana. Se están llenando.';
+            else if(day === 3) msg = '<span>⚠️ Solo 3 cupos disponibles</span> esta semana. Quedan pocos.';
+            else if(day === 4) msg = '<span>⚠️ Solo 2 cupos disponibles</span> esta semana. Casi sin espacio.';
+            else if(day === 5) msg = '<span>⚠️ Último cupo disponible</span> esta semana. Escríbenos hoy para confirmar el tuyo.';
+            else msg = '<span>📅 Agenda tu cupo</span> para la próxima semana — escríbenos hoy y te guardamos el espacio.';
+            document.getElementById('cupos-tag').innerHTML = msg;
+          })();
+        </script>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num">+320</div>
+            <div class="stat-label">Equipos recuperados</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">10x</div>
+            <div class="stat-label">Más velocidad con SSD</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Clientes satisfechos</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="pc.png" alt="Soultech Chile — Servicio técnico para notebooks, celulares y tablets">
+      </div>
+    </div>
+  </section>
+
+  <div class="trust-bar">
+    <div class="trust-inner">
+      <div class="trust-item">✅ Atención personalizada</div>
+      <div class="trust-item">🔧 Diagnóstico certero</div>
+      <div class="trust-item">⚡ Respuesta rápida</div>
+      <div class="trust-item">📍 San Pedro de la Paz</div>
+      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z">
+          </path>
+          <path
+            d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
+        </svg> Resolvemos tus dudas por WhatsApp</div>
+    </div>
+  </div>
+
+  <section class="pain-section">
+    <div class="container">
+      <p class="section-eyebrow">¿Te suena familiar?</p>
+      <h2 class="section-title">Antes de botar tu equipo, <span class="highlight-pink">lee esto</span></h2>
+      <div class="pain-grid reveal">
+        <div class="pain-card">
+          <div class="pain-emoji">🐢</div>
+          <p><strong>Tarda demasiado en prender y en todo</strong><br>Enciendes el equipo y la espera se hace eterna. En la mayoría de los casos la solución es cambiar el disco duro por un SSD y, si es necesario, aumentar la RAM. Tu equipo puede rendir mucho mejor.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-emoji">🔥</div>
+          <p><strong>Se calienta y el ventilador ruge</strong><br>El polvo acumulado y la pasta térmica seca están afectando el rendimiento y la vida útil de tus componentes. Cada día que pasa es más desgaste.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-emoji">💥</div>
+          <p><strong>Se congela, se reinicia solo, pierde avances</strong><br>Tu tiempo vale. Ese ciclo de frustración tiene solución técnica — no es simplemente "porque es viejo". Lo diagnosticamos y te decimos exactamente qué tiene.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-emoji">📵</div>
+          <p><strong>Pantalla rota, bisagra suelta o batería muerta</strong><br>No necesitas comprar uno nuevo. Cambiamos pantallas, reparamos bisagras y reemplazamos baterías en notebooks, celulares y tablets.</p>
+        </div>
+      </div>
+      <a href="https://wa.me/56933034894?text=Hola!%20Vi%20el%20anuncio.%20Mi%20equipo%20presenta%20problemas%20y%20quiero%20saber%20si%20tiene%20solución"
+        class="btn-primary">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
+        </svg>
+        Escribir ahora — cotización gratis
+      </a>
+    </div>
+  </section>
+
+  <section class="testimonials-section" style="padding:90px 24px;">
+    <div class="container">
+      <p class="section-eyebrow">Opiniones reales</p>
+      <h2 class="section-title">Lo que dicen <span class="highlight">quienes confiaron en nosotros</span></h2>
+
+      <style>
+        .testi-summary{display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;margin-bottom:52px;}
+        .testi-score{text-align:center;}
+        .testi-score .big{font-family:'Rajdhani',sans-serif;font-size:4rem;font-weight:800;color:#F2EB5B;line-height:1;}
+        .testi-score .stars{color:#FFB800;font-size:1.4rem;letter-spacing:3px;margin:4px 0;}
+        .testi-score .sub{font-size:0.8rem;color:rgba(255,255,255,0.45);}
+        .testi-divider{width:1px;height:60px;background:rgba(255,255,255,0.1);}
+        .testi-stat{text-align:center;}
+        .testi-stat .val{font-family:'Rajdhani',sans-serif;font-size:2rem;font-weight:800;color:#fff;}
+        .testi-stat .lbl{font-size:0.75rem;color:rgba(255,255,255,0.45);margin-top:2px;}
+
+        .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1100px;margin:0 auto;}
+        .testi-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:16px;transition:all 0.25s;}
+        .testi-card:hover{border-color:rgba(242,235,91,0.3);background:rgba(255,255,255,0.05);transform:translateY(-4px);}
+        .testi-card.featured{border-color:rgba(242,235,91,0.35);background:linear-gradient(145deg,rgba(36,88,184,0.2),rgba(0,0,0,0.45));grid-column:span 1;}
+        .testi-stars{color:#FFB800;font-size:0.9rem;letter-spacing:2px;}
+        .testi-quote{font-size:0.93rem;color:rgba(255,255,255,0.82);line-height:1.65;flex-grow:1;font-style:italic;}
+        .testi-quote strong{color:#F2EB5B;font-style:normal;}
+        .testi-footer{display:flex;align-items:center;gap:12px;border-top:1px solid rgba(255,255,255,0.07);padding-top:14px;}
+        .testi-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#231F8D,#EC3580);display:flex;align-items:center;justify-content:center;font-family:'Rajdhani',sans-serif;font-weight:800;font-size:0.85rem;color:#fff;flex-shrink:0;}
+        .testi-info{flex:1;}
+        .testi-info .name{font-size:0.85rem;font-weight:700;color:#fff;}
+        .testi-info .service{font-size:0.72rem;color:rgba(255,255,255,0.4);margin-top:1px;}
+        .testi-badge{font-size:0.65rem;font-weight:800;background:rgba(236,53,128,0.2);color:#EC3580;padding:3px 8px;border-radius:40px;white-space:nowrap;}
+        .testi-featured-badge{display:inline-block;font-size:0.65rem;font-weight:800;background:linear-gradient(135deg,#F2EB5B,#EC3580);color:#0A0C12;padding:3px 10px;border-radius:40px;margin-bottom:8px;}
+        @media(max-width:900px){.testi-grid{grid-template-columns:repeat(2,1fr);}}
+        @media(max-width:580px){.testi-grid{grid-template-columns:1fr;}.testi-divider{width:60px;height:1px;}}
+      </style>
+
+      <!-- Score summary -->
+      <div class="testi-summary">
+        <div class="testi-score">
+          <div class="big">4.9</div>
+          <div class="stars">★★★★★</div>
+          <div class="sub">Puntuación promedio</div>
+        </div>
+        <div class="testi-divider"></div>
+        <div class="testi-stat">
+          <div class="val">+320</div>
+          <div class="lbl">equipos recuperados</div>
+        </div>
+        <div class="testi-divider"></div>
+        <div class="testi-stat">
+          <div class="val">100%</div>
+          <div class="lbl">recomendarían el servicio</div>
+        </div>
+        <div class="testi-divider"></div>
+        <div class="testi-stat">
+          <div class="val">1–3</div>
+          <div class="lbl">días hábiles promedio</div>
+        </div>
+      </div>
+
+      <!-- Grid de testimonios -->
+      <div class="testi-grid reveal">
+
+        <!-- Testimonio destacado: el más largo y poderoso -->
+        <div class="testi-card featured" style="grid-column:span 2;">
+          <div>
+            <span class="testi-featured-badge">⭐ Historia real</span>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+          <div class="testi-quote">"Pensé que estaba perdido este computador. La pantalla se quemó, lo llevé a revisar y me dijeron que no tenía solución — me ofrecieron comprarlo para repuesto. Ahí quedó tirado por casi un año. Hasta que vi la publicación, hablé con Fabián y me dice que <strong>sí tiene arreglo</strong>. Me arriesgué y le di el vamos… Y aquí estoy, feliz con mi PC de vuelta a la vida. <strong>Los valores son muy razonables. Valió totalmente la pena.</strong>"</div>
+          <div class="testi-footer">
+            <div class="testi-avatar">CR</div>
+            <div class="testi-info">
+              <div class="name">Carlos Rojas</div>
+              <div class="service">Reparación física de notebook</div>
+            </div>
+            <span class="testi-badge">Caso real</span>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">"Excelente servicio. Gran profesional, honestidad y amabilidad en todo el proceso, desde las consultas previas hasta la ejecución del trabajo. <strong>Siempre aportando soluciones técnicas claras</strong> e informando en todo momento sobre el estado del equipo."</div>
+          <div class="testi-footer">
+            <div class="testi-avatar">MV</div>
+            <div class="testi-info">
+              <div class="name">Marcela Vidal</div>
+              <div class="service">Servicio Acelera 10x tu notebook</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">"Nuevamente llevo un notebook a arreglar y queda impecable. <strong>Muy buen servicio, excelente atención y muy transparente</strong> en el trabajo que realiza. 100% recomendable."</div>
+          <div class="testi-footer">
+            <div class="testi-avatar">RF</div>
+            <div class="testi-info">
+              <div class="name">Roberto Fuentes</div>
+              <div class="service">Servicio Acelera 10x tu notebook</div>
+            </div>
+            <span class="testi-badge">2.ª vez</span>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">"¡Muchas gracias por el servicio! <strong>Profesional, rápido y de calidad.</strong> El equipo quedó en perfectas condiciones. Recomendado al 100%."</div>
+          <div class="testi-footer">
+            <div class="testi-avatar">AP</div>
+            <div class="testi-info">
+              <div class="name">Alejandro Pérez</div>
+              <div class="service">Formateo profesional</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">"Agradezco el excelente trabajo, la amabilidad y responsabilidad. <strong>El notebook quedó óptimo.</strong> Muchas gracias. Recomiendo 💯"</div>
+          <div class="testi-footer">
+            <div class="testi-avatar">VS</div>
+            <div class="testi-info">
+              <div class="name">Verónica Salinas</div>
+              <div class="service">Mantención interna</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">"<strong>Muy buena experiencia, atención rápida y profesional.</strong> Recomendado sin dudarlo."</div>
+          <div class="testi-footer">
+            <div class="testi-avatar">FM</div>
+            <div class="testi-info">
+              <div class="name">Felipe Morales</div>
+              <div class="service">Servicio Acelera 10x tu notebook</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">"Excelente servicio, muy profesional. <strong>Recomendado 100%.</strong>"</div>
+          <div class="testi-footer">
+            <div class="testi-avatar">PC</div>
+            <div class="testi-info">
+              <div class="name">Paulina Castillo</div>
+              <div class="service">Reparación física de notebook</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">"<strong>Quedó súper.</strong> Lo instalamos y todo perfecto. Muchas gracias."</div>
+          <div class="testi-footer">
+            <div class="testi-avatar">LG</div>
+            <div class="testi-info">
+              <div class="name">Luis González</div>
+              <div class="service">Cambio de pantalla celular</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">"100% recomendado, <strong>muy buen servicio.</strong>"</div>
+          <div class="testi-footer">
+            <div class="testi-avatar">JT</div>
+            <div class="testi-info">
+              <div class="name">Jorge Tapia</div>
+              <div class="service">Formateo profesional</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA bajo testimonios -->
+      <div style="text-align:center;margin-top:48px;">
+        <p style="font-size:0.9rem;color:rgba(255,255,255,0.45);margin-bottom:20px;">¿Tu equipo necesita atención? Únete a los más de 320 clientes satisfechos.</p>
+        <a href="https://wa.me/56933034894?text=Hola!%20Vi%20los%20comentarios%20y%20quiero%20cotizar%20un%20servicio" class="btn-primary" style="font-size:1rem;padding:15px 30px;display:inline-flex;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z"/></svg>
+          Cotizar mi servicio ahora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section" id="servicios">
+    <div class="container">
+      <p class="section-eyebrow">Nuestros Servicios</p>
+      <h2 class="section-title">Servicios <span class="highlight">que marcan la diferencia</span></h2>
+      <p class="section-sub">Desde una limpieza profunda hasta la transformación total de tu equipo. Todo con dedicación
+        y responsabilidad.</p>
+      <div class="services-grid reveal">
+        <div class="service-card">
+          <div class="premium-badge">⭐ LO MÁS SOLICITADO</div>
+          <div class="service-icon">🚀</div>
+          <h3>Acelera 10 veces tu notebook/pc</h3>
+          <p>Aceleramos tu equipo al máximo mediante la instalación de unidades SSD, aumento de memoria RAM y una
+            mantención completa que incluye limpieza de polvo, cambio de pasta térmica y formateo profesional.</p>
+          <span class="service-tag">Upgrade + Mantención</span>
+          <a href="https://wa.me/56933034894?text=Hola!%20Vi%20el%20anuncio.%20Me%20interesa%20acelerar%2010%20veces%20mi%20notebook/pc"
+            class="service-cta" style="display:inline-flex;align-items:center;gap:6px;"><svg width="16" height="16"
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z">
+              </path>
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
+            </svg> ← Cotiza aquí</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>Formateo e Instalación de Sistema</h3>
+          <p>Instalación limpia de Windows, configuración de drivers actualizados y programas esenciales. El equipo
+            queda optimizado y libre de archivos basura.</p>
+          <span class="service-tag">Sistema Operativo</span>
+          <a href="https://wa.me/56933034894?text=Hola!%20Vi%20el%20anuncio.%20Necesito%20un%20formateo"
+            class="service-cta" style="display:inline-flex;align-items:center;gap:6px;"><svg width="16" height="16"
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z">
+              </path>
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
+            </svg> ← Cotiza aquí</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>Mantención interna</h3>
+          <p>Limpieza interna del equipo, sobre todo del cooler del procesador y disipador. Además, se cambia la pasta térmica del procesador.</p>
+          <span class="service-tag">Evita sobrecalentamientos</span>
+          <a href="https://wa.me/56933034894?text=Hola!%20Vi%20el%20anuncio.%20Necesito%20una%20mantención%20interna"
+            class="service-cta" style="display:inline-flex;align-items:center;gap:6px;"><svg width="16" height="16"
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z">
+              </path>
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
+            </svg> ← Cotiza aquí</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🖥️</div>
+          <h3>Reparación Física de Notebooks</h3>
+          <p>Solucionamos fallas de encendido, reparamos bisagras rotas, realizamos cambios de teclados, pantallas
+            dañadas y baterías infladas o desgastadas.</p>
+          <span class="service-tag">Hardware y Estructura</span>
+          <a href="https://wa.me/56933034894?text=Hola!%20Vi%20el%20anuncio.%20Mi%20notebook%20tiene%20daño%20físico"
+            class="service-cta" style="display:inline-flex;align-items:center;gap:6px;"><svg width="16" height="16"
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z">
+              </path>
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
+            </svg> ← Cotiza aquí</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3>Servicio Técnico Móvil</h3>
+          <p>Especialistas en reparación de celulares y tablets. Efectuamos cambio de pantallas, reemplazo de baterías y
+            reparación de puertos de carga.</p>
+          <span class="service-tag">Celulares y Tablets</span>
+          <a href="https://wa.me/56933034894?text=Hola!%20Vi%20el%20anuncio.%20Necesito%20reparar%20mi%20dispositivo%20móvil"
+            class="service-cta" style="display:inline-flex;align-items:center;gap:6px;"><svg width="16" height="16"
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z">
+              </path>
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
+            </svg> ← Cotiza aquí</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN PRECIOS ACELERA 10X -->
+  <section id="precios" style="padding:90px 24px;background:rgba(0,0,0,0.2);">
+    <div class="container" style="max-width:1000px;">
+      <p class="section-eyebrow">Servicio estrella</p>
+      <h2 class="section-title">⚡ Acelera 10 veces tu notebook — <span class="highlight">elige tu plan</span></h2>
+      <p class="section-sub" style="margin-bottom:40px;">Escoge la opción de almacenamiento, agrega RAM si la necesitas y ve el total al instante. Sin sorpresas.</p>
+
+      <style>
+        .precio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:32px;}
+        .precio-card{background:rgba(255,255,255,0.04);border:1.5px solid rgba(253,241,72,0.15);border-radius:20px;padding:24px 18px;cursor:pointer;transition:all 0.2s;text-align:center;position:relative;}
+        .precio-card:hover{border-color:rgba(253,241,72,0.5);background:rgba(255,255,255,0.07);}
+        .precio-card.selected{border-color:#F2EB5B;background:rgba(242,235,91,0.08);box-shadow:0 0 0 2px rgba(242,235,91,0.2);}
+        .precio-card .badge-pop{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#F2EB5B,#EC3580);color:#0A0C12;font-size:0.65rem;font-weight:800;padding:3px 12px;border-radius:40px;white-space:nowrap;}
+        .precio-card .ssd-size{font-family:'Rajdhani',sans-serif;font-size:2rem;font-weight:800;color:#F2EB5B;line-height:1;}
+        .precio-card .ssd-label{font-size:0.75rem;color:rgba(255,255,255,0.5);margin:4px 0 12px;}
+        .precio-card .ssd-price{font-size:1.3rem;font-weight:700;color:#fff;}
+        .precio-card .ssd-includes{font-size:0.72rem;color:rgba(255,255,255,0.45);margin-top:8px;line-height:1.5;}
+        .ram-toggle-wrap{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:20px 24px;margin-bottom:24px;}
+        .ram-toggle-title{font-family:'Rajdhani',sans-serif;font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:14px;}
+        .ram-options{display:flex;gap:12px;flex-wrap:wrap;}
+        .ram-btn{background:rgba(255,255,255,0.04);border:1.5px solid rgba(255,255,255,0.12);border-radius:12px;padding:10px 20px;cursor:pointer;color:rgba(255,255,255,0.7);font-size:0.85rem;font-weight:600;transition:all 0.2s;font-family:'DM Sans',sans-serif;}
+        .ram-btn:hover{border-color:rgba(236,53,128,0.5);color:#fff;}
+        .ram-btn.active{border-color:#EC3580;background:rgba(236,53,128,0.12);color:#fff;}
+        .ram-btn.none-btn.active{border-color:rgba(255,255,255,0.3);background:rgba(255,255,255,0.06);}
+        .resumen-box{background:linear-gradient(135deg,rgba(36,88,184,0.3),rgba(0,0,0,0.5));border:1.5px solid rgba(242,235,91,0.3);border-radius:20px;padding:28px 28px 24px;margin-bottom:24px;}
+        .resumen-row{display:flex;justify-content:space-between;align-items:center;font-size:0.9rem;color:rgba(255,255,255,0.7);margin-bottom:10px;}
+        .resumen-row.total{border-top:1px solid rgba(255,255,255,0.12);padding-top:16px;margin-top:6px;color:#fff;font-size:1.1rem;font-weight:700;}
+        .resumen-row.total .val{color:#F2EB5B;font-family:'Rajdhani',sans-serif;font-size:1.6rem;font-weight:800;}
+        .resumen-row .adelanto-badge{background:rgba(242,235,91,0.12);color:#F2EB5B;font-size:0.75rem;font-weight:700;padding:3px 10px;border-radius:40px;}
+        .pago-steps{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px;}
+        .pago-step{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:16px;}
+        .pago-step .num{font-family:'Rajdhani',sans-serif;font-size:1.8rem;font-weight:800;color:#F2EB5B;line-height:1;}
+        .pago-step .label{font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:2px;}
+        .pago-step .amount{font-size:1rem;font-weight:700;color:#fff;margin-top:6px;}
+        .pago-step .desc{font-size:0.72rem;color:rgba(255,255,255,0.4);margin-top:4px;line-height:1.4;}
+        .incluye-list{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 28px;}
+        .inc-chip{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:40px;padding:5px 14px;font-size:0.75rem;color:rgba(255,255,255,0.65);}
+        .inc-chip span{color:#F2EB5B;margin-right:4px;}
+        @media(max-width:600px){.pago-steps{grid-template-columns:1fr;}.precio-grid{grid-template-columns:repeat(2,1fr);}}
+      </style>
+
+      <!-- Selector SSD -->
+      <div class="precio-grid" id="ssd-grid">
+        <div class="precio-card selected" onclick="selectSSD(this,109990)" data-price="109990">
+          <div class="ssd-size">240<span style="font-size:1rem">GB</span></div>
+          <div class="ssd-label">SSD — Opción entrada</div>
+          <div class="ssd-price">$109.990</div>
+          <div class="ssd-includes">Ideal para uso básico y oficina</div>
+        </div>
+        <div class="precio-card" onclick="selectSSD(this,128990)" data-price="128990">
+          <div class="badge-pop">Más popular</div>
+          <div class="ssd-size">480<span style="font-size:1rem">GB</span></div>
+          <div class="ssd-label">SSD — Mayor capacidad</div>
+          <div class="ssd-price">$128.990</div>
+          <div class="ssd-includes">Equilibrio perfecto precio/espacio</div>
+        </div>
+        <div class="precio-card" onclick="selectSSD(this,134990)" data-price="134990">
+          <div class="ssd-size">500<span style="font-size:1rem">GB</span></div>
+          <div class="ssd-label">SSD — Alta capacidad</div>
+          <div class="ssd-price">$134.990</div>
+          <div class="ssd-includes">Para archivos, fotos y trabajo intenso</div>
+        </div>
+        <div class="precio-card" onclick="selectSSD(this,179850)" data-price="179850">
+          <div class="ssd-size">1<span style="font-size:1rem">TB</span></div>
+          <div class="ssd-label">SSD — Máxima capacidad</div>
+          <div class="ssd-price">$179.850</div>
+          <div class="ssd-includes">Espacio sin límites, máximo rendimiento</div>
+        </div>
+      </div>
+
+      <!-- Selector RAM -->
+      <div class="ram-toggle-wrap">
+        <div class="ram-toggle-title">¿Necesitas más memoria RAM? <span style="font-size:0.8rem;color:rgba(255,255,255,0.4);font-weight:400;">(opcional — pregúntale al técnico si tu equipo lo necesita)</span></div>
+        <div class="ram-options">
+          <button class="ram-btn none-btn active" onclick="selectRAM(this,0)">Sin RAM adicional</button>
+          <button class="ram-btn" onclick="selectRAM(this,86990)">+ RAM DDR4 — $86.990</button>
+          <button class="ram-btn" onclick="selectRAM(this,66990)">+ RAM DDR3 / DDR3L — $66.990</button>
+        </div>
+      </div>
+
+      <!-- Resumen de pago -->
+      <div class="resumen-box">
+        <div class="resumen-row"><span>SSD seleccionado</span><span id="r-ssd">$109.990</span></div>
+        <div class="resumen-row" id="r-ram-row" style="display:none"><span>Memoria RAM</span><span id="r-ram">$0</span></div>
+        <div class="resumen-row total"><span>Total del servicio</span><span class="val" id="r-total">$109.990</span></div>
+        <div class="pago-steps">
+          <div class="pago-step">
+            <div class="num">60%</div>
+            <div class="label">Adelanto al confirmar</div>
+            <div class="amount" id="r-adelanto">$65.994</div>
+            <div class="desc">Para costear SSD, RAM y materiales. Pagas al dejar el equipo.</div>
+          </div>
+          <div class="pago-step">
+            <div class="num">40%</div>
+            <div class="label">Al retirar el equipo</div>
+            <div class="amount" id="r-saldo">$43.996</div>
+            <div class="desc">Una vez listo (1–3 días hábiles). Pagas cuando lo retiras.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Qué incluye siempre -->
+      <p style="font-size:0.78rem;font-weight:700;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;">Cualquiera de las 4 opciones del servicio Acelera 10x incluye</p>
+      <div class="incluye-list">
+        <div class="inc-chip"><span>✓</span>Cambio HDD → SSD nuevo</div>
+        <div class="inc-chip"><span>✓</span>Windows 10 u 11 según el equipo</div>
+        <div class="inc-chip"><span>✓</span>Microsoft Office activado</div>
+        <div class="inc-chip"><span>✓</span>Drivers esenciales</div>
+        <div class="inc-chip"><span>✓</span>Limpieza interna</div>
+        <div class="inc-chip"><span>✓</span>Cambio pasta térmica</div>
+        <div class="inc-chip"><span>✓</span>Antivirus instalado</div>
+        <div class="inc-chip"><span>✓</span>Lector PDF</div>
+        <div class="inc-chip"><span>✓</span>Garantía incluida</div>
+        <div class="inc-chip"><span>✓</span>Respaldo opcional</div>
+      </div>
+
+      <a href="https://wa.me/56933034894?text=Hola!%20Vi%20el%20anuncio.%20Me%20interesa%20el%20servicio%20Acelera%2010x%20mi%20notebook%20y%20quiero%20cotizar" class="btn-primary" style="font-size:1rem;padding:16px 32px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z"/></svg>
+        Quiero cotizar este servicio
+      </a>
+      <p style="margin-top:16px;font-size:0.82rem;color:rgba(255,255,255,0.4);">📍 San Pedro de la Paz &nbsp;·&nbsp; 🚚 Recibimos equipos desde todo Chile vía Chilexpress o Starken — envío pagado por el cliente</p>
+    </div>
+
+    <script>
+      var ssdPrice = 109990;
+      var ramPrice = 0;
+      function fmt(n){return '$'+Math.round(n).toLocaleString('es-CL');}
+      function updateResumen(){
+        var total=ssdPrice+ramPrice;
+        var adelanto=Math.round(total*0.6);
+        var saldo=total-adelanto;
+        document.getElementById('r-ssd').textContent=fmt(ssdPrice);
+        document.getElementById('r-total').textContent=fmt(total);
+        document.getElementById('r-adelanto').textContent=fmt(adelanto);
+        document.getElementById('r-saldo').textContent=fmt(saldo);
+        var ramRow=document.getElementById('r-ram-row');
+        if(ramPrice>0){ramRow.style.display='flex';document.getElementById('r-ram').textContent=fmt(ramPrice);}
+        else{ramRow.style.display='none';}
+      }
+      function selectSSD(el,price){
+        document.querySelectorAll('.precio-card').forEach(function(c){c.classList.remove('selected');});
+        el.classList.add('selected');
+        ssdPrice=price;
+        updateResumen();
+      }
+      function selectRAM(el,price){
+        document.querySelectorAll('.ram-btn').forEach(function(b){b.classList.remove('active');});
+        el.classList.add('active');
+        ramPrice=price;
+        updateResumen();
+      }
+    </script>
+  </section>
+  <!-- FIN SECCIÓN PRECIOS -->
+
+  <section class="process-section">
+    <div class="container">
+      <p class="section-eyebrow">Cómo trabajamos</p>
+      <h2 class="section-title">Simple, directo y <span class="highlight">sin vueltas</span></h2>
+      <div class="steps reveal">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h4>Contáctanos</h4>
+          <p>Escríbenos por WhatsApp. Cuéntanos qué equipo tienes y qué problema presenta. Respondemos rápido.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h4>Cotización clara</h4>
+          <p>Te entregamos un presupuesto sin letra chica. Si el servicio es el Acelera 10x o requiere cambio de repuestos, se abona el <strong style="color:#F2EB5B;">60% al dejar el equipo</strong> para adquirir los materiales nuevos.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h4>Trabajo en 1–3 días</h4>
+          <p>Realizamos el servicio completo con los mejores materiales. Te avisamos cuando esté listo.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h4>Retiras y listo ✓</h4>
+          <p>Retiras tu equipo con el servicio completado y pagas el <strong style="color:#F2EB5B;">40% restante</strong>. Sin cobros extra, sin sorpresas. Garantía incluida en todo trabajo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof-section">
+    <div class="container">
+      <p class="section-eyebrow">Cobertura</p>
+      <div class="proof-number">+320</div>
+      <h2 class="section-title">Servicios realizados para nuestros clientes de:</h2>
+      <div class="zones reveal">
+        <span class="zone-tag">San Pedro de la Paz</span>
+        <span class="zone-tag">Concepción</span>
+        <span class="zone-tag">Talcahuano</span>
+        <span class="zone-tag">Hualpén</span>
+        <span class="zone-tag">Coronel</span>
+        <span class="zone-tag">Lota</span>
+        <span class="zone-tag">Chiguayante</span>
+        <span class="zone-tag">Penco</span>
+      </div>
+      <a href="https://wa.me/56933034894?text=Hola!%20Vi%20el%20anuncio.%20Quiero%20cotizar%20un%20servicio"
+        class="btn-primary">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+          <path
+            d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
+        </svg>
+        Consulta tu caso sin compromiso
+      </a>
+    </div>
+  </section>
+
+  <section class="diff-section">
+    <div class="container">
+      <p class="section-eyebrow">Por qué Soultech</p>
+      <h2 class="section-title">Más que un servicio técnico.<br><span class="highlight">Somos tu aliado tecnológico
+          estratégico.</span></h2>
+      <div class="diff-grid reveal">
+        <div class="diff-card">
+          <div class="diff-icon-wrap">🎯</div>
+          <div>
+            <h4>Diagnóstico honesto</h4>
+            <p>Informamos exactamente qué tiene el equipo y cuánto cuesta arreglarlo. Sin inventar problemas.</p>
+          </div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon-wrap">⚡</div>
+          <div>
+            <h4>Respuesta rápida</h4>
+            <p>Ofrecemos soporte ágil a través de WhatsApp. Sin esperar días.</p>
+          </div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon-wrap">🔧</div>
+          <div>
+            <h4>Trabajo responsable</h4>
+            <p>Cada equipo que ingresa a nuestro laboratorio recibe atención dedicada. Garantizamos cada una de nuestras
+              intervenciones.</p>
+          </div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon-wrap">💰</div>
+          <div>
+            <h4>Ahorra vs. comprar nuevo</h4>
+            <p>La mayoría de los equipos se pueden recuperar por una fracción del precio de uno nuevo.</p>
+          </div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon-wrap">👤</div>
+          <div>
+            <h4>Atención directa</h4>
+            <p>Trato directo con nuestros especialistas. Sin intermediarios ni formularios interminables.</p>
+          </div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon-wrap">📍</div>
+          <div>
+            <h4>Ubicados en San Pedro de la Paz</h4>
+            <p>Recibimos equipos de todo el país por Chilexpress o Starken (envio pagado por el cliente).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="faq-container">
+      <p class="section-eyebrow">Resolvemos tus dudas</p>
+      <h2 class="section-title">Preguntas <span class="highlight">Frecuentes</span></h2>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question">¿Por qué se paga el 60% por adelantado? <span class="faq-icon">+</span></button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">El adelanto del 60% nos permite adquirir los repuestos nuevos (SSD, RAM u otros materiales) específicamente para tu equipo. Trabajamos con piezas nuevas de calidad, no con remanufacturados. El <strong>40% restante lo pagas únicamente cuando retiras el equipo terminado</strong>, así tienes la seguridad de que solo pagas el total cuando ya tienes el resultado en tus manos.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Pierdo mis archivos al reparar o formatear? <span class="faq-icon">+</span></button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Si lo solicitas, realizamos respaldo de tus archivos personales (documentos, fotos, videos, PDFs) antes de cualquier procedimiento mayor. Solo debes pedirlo al momento de dejar el equipo. <strong>Los programas instalados no se respaldan</strong>, pero todo lo demás queda seguro.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Cómo funciona la promoción del diagnóstico? <span
+              class="faq-icon">+</span></button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">El diagnóstico tiene un valor de $10.000, el cual te garantiza una revisión
+              profesional y certera. Si luego de recibir el presupuesto decides hacer la reparación con nosotros,
+              <strong>esos $10.000 se descuentan del costo total</strong> de la reparación.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Cuánto tiempo demora la reparación? <span class="faq-icon">+</span></button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Depende del problema, pero la mayoría de los trabajos (como upgrades de SSD, limpiezas y formateos) los realizamos entre 1 y 3 días hábiles. Para repuestos específicos puede demorar un poco más, pero siempre te informaremos los tiempos exactos desde el principio.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Tienen garantía los trabajos? <span class="faq-icon">+</span></button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Absolutamente. Todos nuestros servicios técnicos cuentan con garantía, tanto
+              por la mano de obra como por los repuestos nuevos instalados. Queremos que te sientas tranquilo con tu
+              inversión.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container">
+      <p class="section-eyebrow">¿Listo para el cambio?</p>
+      <h2 class="section-title">Tu equipo puede funcionar <span class="highlight">mucho mejor</span></h2>
+      <p class="section-sub">No esperes a que el problema sea más grave y más caro. Contáctanos hoy para obtener una
+        solución definitiva.</p>
+      <div class="final-cta-actions">
+        <a href="https://wa.me/56933034894?text=Hola!%20Vi%20el%20anuncio.%20Quiero%20cotizar%20un%20servicio%20técnico"
+          class="btn-primary" style="font-size:1.1rem; padding:18px 32px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            <path
+              d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
+          </svg>
+          Hablar con el técnico ahora
+        </a>
+      </div>
+      <p class="guarantee-note">🔒 Cotización sin compromiso · Diagnóstico certero · Atención directa por WhatsApp</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-social">
+      <a href="https://instagram.com/soultechcl" target="_blank" class="social-btn"><svg width="18" height="18"
+          viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+        </svg> Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100070806776193" target="_blank" class="social-btn"><svg
+          width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+        </svg> Facebook</a>
+      <a href="https://tiktok.com/@soultechchile" target="_blank" class="social-btn"><svg width="18" height="18"
+          viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 15.66a6.34 6.34 0 0010.86 4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1.04-.53z" />
+        </svg> TikTok</a>
+      <a href="https://wa.me/56933034894" class="social-btn"><svg width="18" height="18" viewBox="0 0 24 24"
+          fill="currentColor">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z">
+          </path>
+          <path
+            d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
+        </svg> WhatsApp directo</a>
+    </div>
+    <div class="footer-links">
+      <a href="#servicios">Servicios</a>
+      <a href="https://wa.me/56933034894?text=Hola%20tengo%20una%20consulta">Contacto</a>
+      <a href="https://wa.me/56933034894">Consultar disponibilidad</a>
+    </div>
+    <p class="footer-copy">© 2026 Soultech Chile · Servicio técnico en San Pedro de la Paz</p>
+  </footer>
+
+  <a href="https://wa.me/56933034894?text=Hola!%20Vi%20su%20anuncio%20y%20necesito%20ayuda%20con%20mi%20equipo"
+    class="wa-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.847L.057 23.882l6.2-1.624A11.949 11.949 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.213-3.682.965.982-3.587-.235-.369A9.818 9.818 0 1 1 12 21.818z" />
+    </svg>
+  </a>
+
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentNode;
+        const isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+        if (!isActive) item.classList.add('active');
+      });
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Schema.org JSON-LD para SEO local
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Soultech Chile",
+      "description": "Servicio técnico de notebooks, celulares y tablets en San Pedro de la Paz.",
+      "telephone": "+56933034894",
+      "areaServed": ["San Pedro de la Paz", "Concepción", "Talcahuano", "Hualpén", "Coronel", "Lota", "Chiguayante", "Penco"],
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Pedro de la Paz",
+        "addressRegion": "Biobío",
+        "addressCountry": "CL"
+      }
+    });
+    document.head.appendChild(script);
+  </script>
+</body>
+
+</html>
